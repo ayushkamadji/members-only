@@ -1,0 +1,21 @@
+<div id='navbar' class="ui inverted menu">
+  <%= content_tag(:h3, class: 'ui header item', id:'logo') do %>
+    <%= link_to "members only", root_url %>
+  <% end %>
+
+  <div class="right menu">
+    <% if current_user %>
+      <%= link_to sign_out_path, method: :delete, class: 'item' do %>
+        <%= "Sign out" %>
+      <% end %>
+    <% else %>
+      <%= link_to sign_in_path, class: 'item' do %>
+        <%= "Sign in" %>
+      <% end %>
+    <% end %>
+
+    <%= link_to root_url, class: 'item' do %>
+      <%= content_tag(:i, '', class: 'large home icon') %>
+    <% end %>
+  </div>
+</div>

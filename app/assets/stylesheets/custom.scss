@@ -1,0 +1,31 @@
+@import 'semantic-ui';
+
+.column {
+  max-width: 450px;
+}
+
+body > .grid {
+  height: 100%;
+}
+
+.label {
+  text-align: right;
+  width: 90px;
+}
+
+input[type=submit] {
+  background: none;
+  border: none;
+}
+
+#navbar {
+  text-align: right;
+  border-radius: 0;
+}
+
+#logo {
+  font-family: Times, serif;
+  color: white;
+  ::before {
+  }
+}

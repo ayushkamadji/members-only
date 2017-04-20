@@ -9,6 +9,13 @@
   </head>
 
   <body>
-    <%= yield %>
+    <%= render 'layouts/header' %>
+
+    <div class="ui container">
+      <%= render 'layouts/flasher' %>
+
+      <%= yield %>
+    </div>
+
   </body>
 </html>
