@@ -1,0 +1,18 @@
+<div class="ui middle aligned grid container">
+  <div class="sixteen wide column">
+<%= form_for(@post, html: {class: 'ui large form'}) do |f| %>
+    <%= f.hidden_field :user_id, value: current_user.id %>
+    <div class="ui segment">
+
+      <div class="field">
+        <div class='ui input'>
+          <%= f.text_area :body %>
+        </div>
+      </div>
+
+      <%= f.submit "Submit", class: "ui small blue submit button"%>
+
+    </div>
+<% end %>
+  </div>
+</div>

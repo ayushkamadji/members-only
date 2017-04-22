@@ -1,9 +1,5 @@
 @import 'semantic-ui';
 
-.column {
-  max-width: 450px;
-}
-
 body > .grid {
   height: 100%;
 }
@@ -18,6 +14,11 @@ input[type=submit] {
   border: none;
 }
 
+.extra {
+  text-align: right;
+  font-size: 0.8em;
+}
+
 #navbar {
   text-align: right;
   border-radius: 0;
@@ -27,5 +28,12 @@ input[type=submit] {
   font-family: Times, serif;
   color: white;
   ::before {
+  }
+}
+
+.field_with_errors {
+  width: 100%;
+  text-area, input {
+    border-color: red;
   }
 }

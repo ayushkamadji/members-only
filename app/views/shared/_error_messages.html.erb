@@ -1,0 +1,9 @@
+<% if !@post.errors.empty? %>
+<div class="ui error message">
+  <ul class="list">
+    <% @post.errors.full_messages.each do |msg| %>
+      <%= content_tag :li, msg %>
+    <% end %>
+  </ul>
+</div>
+<% end %>
