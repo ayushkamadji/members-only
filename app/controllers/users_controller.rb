@@ -8,6 +8,7 @@ class UsersController < ApplicationController
     if @user.save
       sign_in(@user)
       remember(@user)
+      UserMailer.welcome_email(@user).deliver_now!
       flash[:success] = "Welcome to the members only club"
       redirect_to root_path
     else
